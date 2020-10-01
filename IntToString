@@ -1,8 +1,13 @@
 import java.util.*;
 public class IntToString {
     public static void main(String args[]) {
-    	int n = 4;
-    	String s = Integer.toString(n);
+        Scanner in = new Scanner(System.in);
+    	   int n = in .nextInt();
+    	   in.close();
+
+    	 String s = Integer.toString(n);
+    	 System.out.println(s);
+         
     	if (n == Integer.parseInt(s)) {
     	    System.out.println("Good job");
     	   } else {
