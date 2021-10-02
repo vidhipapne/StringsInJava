@@ -1,8 +1,8 @@
 /* Given a string s, return the longest palindromic substring in s.*/
 
 import java.util.Scanner;
-class LongestPalSubStr {
-     public String longestPalindrome(String s) {
+public class LongestPalSubStr {
+    static public String longestPalindrome(String s) {
         char[] charArray = s.toCharArray();
         int start = 0;
         int maxLen = 0;
@@ -17,7 +17,7 @@ class LongestPalSubStr {
 
         return s.substring(start, start + maxLen);
     }
-    public boolean isPalindrome(char[] charArray, int start, int len) {
+    static public boolean isPalindrome(char[] charArray, int start, int len) {
         while (len > 0) {
             if (charArray[start] != charArray[start + len]) {
                 return false;
