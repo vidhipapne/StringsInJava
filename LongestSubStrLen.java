@@ -1,7 +1,7 @@
 /* Given a string s, find the length of the longest substring without repeating characters. */
-
-class LongestSubStrLen {
-    public int lengthOfLongestSubstring(String s) {
+import java.util.*;
+public class LongestSubStrLen {
+    static public int lengthOfLongestSubstring(String s) {
         if(s=="") return 0;
         int start = 0;
         int end = 0;
