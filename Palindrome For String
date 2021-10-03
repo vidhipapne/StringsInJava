@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class PalindromeForString {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		//For strings 
+    
+		String st = s.next();
+		int l = st.length();
+		String st1 = "";
+		for(int i = 0 ; i < l ; i++)
+		{
+			//string function for getting character at a particular index
+			char ch = st.charAt(i);
+			st1 = ch + st1;	
+		}
+    
+    
+	    	//condition for checking palindrome by using string function
+        
+		if(st.equals(st1))
+			System.out.print("Palindrome");
+		else
+			System.out.print("Not Palindrome");
+	
+			}
+		
+		}
