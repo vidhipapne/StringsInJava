@@ -1,0 +1,24 @@
+// Given a roman numeral, convert it to an integer.
+// function:
+ int roman(char c){
+        switch(c){
+                case 'I' : return 1; 
+                case 'V' : return 5; 
+                case 'X' : return 10; 
+                case 'L' : return 50; 
+                case 'C' : return 100; 
+                case 'D' : return 500; 
+                case 'M' : return 1000;
+                default: return 0;
+        }
+    }
+    public int romanToInt(String s) {
+        int result=0, multi=0;
+        for(int i=0;i<s.length();i++){
+            int c = roman(s.charAt(i));
+            if(c<=multi) result=result+c;
+            else result=result+c-2*multi;
+            multi=c;
+        }
+        return result;
+    }
